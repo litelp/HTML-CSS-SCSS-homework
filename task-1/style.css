@@ -1,0 +1,34 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.header__link {
+  padding: 3px;
+  text-decoration: none;
+  color: #5a5a5a;
+}
+.header__link:hover {
+  border-radius: 14px;
+  background-color: #f4e7bf;
+  cursor: pointer;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(242, 242, 242, 0.8705882353);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.scroll-to-top:hover {
+  background-color: #f4e7bf;
+}
+.scroll-to-top:active {
+  color: #5a5a5a;
+}/*# sourceMappingURL=style.css.map */

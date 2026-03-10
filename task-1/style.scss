@@ -1,0 +1,40 @@
+$button-bg: #f2f2f2de;
+$button-bg-hover: #f4e7bf;
+$button-text-color: #5a5a5a;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header__link {
+    padding: 3px;
+    text-decoration: none;
+    color: $button-text-color;
+
+    &:hover {
+        border-radius: 14px;
+        background-color: $button-bg-hover;
+        cursor: pointer;
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: $button-bg;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $button-bg-hover;
+    }
+    &:active {
+        color: $button-text-color;
+    }
+}
