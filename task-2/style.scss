@@ -1,0 +1,43 @@
+$button-bg-hover: #f4e7bf;
+$text-color: #5a5a5a;
+
+@mixin border-and-bg {
+    border-radius: 14px;
+    background-color: $button-bg-hover;
+}
+
+.header__link {
+    padding: 3px;
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+        @include border-and-bg;
+        cursor: pointer;
+    }
+}
+
+.tooltip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__text {
+        padding: 3px;
+        visibility: hidden;
+        max-width: 90px;
+        text-align: center;
+        @include border-and-bg;
+        color: $text-color;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover .tooltip__text {
+        visibility: visible;
+        opacity: 1;
+    }
+}
