@@ -1,0 +1,19 @@
+$color-text: #000000;
+$color-text-hover: #666666;
+
+.navbar {
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        margin-top: 30px;
+        text-decoration: none;
+        color: $color-text;
+
+        &:hover {
+            color: $color-text-hover;
+            text-decoration: underline;
+        }
+    }
+}

@@ -6,22 +6,13 @@ $text-color: #5a5a5a;
     background-color: $button-bg-hover;
 }
 
-.header__link {
-    padding: 3px;
-    text-decoration: none;
-    color: $text-color;
-
-    &:hover {
-        @include border-and-bg;
-        cursor: pointer;
-    }
-}
-
 .tooltip {
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     &__text {
+        position: absolute;
         padding: 3px;
         visibility: hidden;
         max-width: 90px;
@@ -32,11 +23,14 @@ $text-color: #5a5a5a;
         transition: opacity 0.3s;
     }
 
-    &:hover {
-        cursor: pointer;
+    &__heading {
+        margin-top: 60px;
+        &:hover {
+            cursor: pointer;
+        }
     }
 
-    &:hover .tooltip__text {
+    &__heading:hover + .tooltip__text {
         visibility: visible;
         opacity: 1;
     }

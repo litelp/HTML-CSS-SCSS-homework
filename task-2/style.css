@@ -1,20 +1,11 @@
-.header__link {
-  padding: 3px;
-  text-decoration: none;
-  color: #5a5a5a;
-}
-.header__link:hover {
-  border-radius: 14px;
-  background-color: #f4e7bf;
-  cursor: pointer;
-}
-
 .tooltip {
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .tooltip__text {
+  position: absolute;
   padding: 3px;
   visibility: hidden;
   max-width: 90px;
@@ -25,10 +16,13 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
-.tooltip:hover {
+.tooltip__heading {
+  margin-top: 60px;
+}
+.tooltip__heading:hover {
   cursor: pointer;
 }
-.tooltip:hover .tooltip__text {
+.tooltip__heading:hover + .tooltip__text {
   visibility: visible;
   opacity: 1;
 }/*# sourceMappingURL=style.css.map */

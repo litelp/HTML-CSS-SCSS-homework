@@ -1,0 +1,13 @@
+$button-bg-hover: #f4e7bf;
+
+.header__link {
+    padding: 3px;
+    text-decoration: none;
+    color: #5a5a5a;
+
+    &:hover {
+        border-radius: 14px;
+        background-color: $button-bg-hover;
+        cursor: pointer;
+    }
+}

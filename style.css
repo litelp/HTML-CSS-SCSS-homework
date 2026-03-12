@@ -1,1 +1,12 @@
-/*# sourceMappingURL=style.css.map */
+.navbar__list {
+  list-style-type: none;
+}
+.navbar__item {
+  margin-top: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+.navbar__item:hover {
+  color: #666666;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
